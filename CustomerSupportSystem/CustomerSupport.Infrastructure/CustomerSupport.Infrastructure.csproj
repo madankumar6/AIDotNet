@@ -12,9 +12,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="10.0.12" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.23.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CustomerSupport.Application\CustomerSupport.Application.csproj" />
     <ProjectReference Include="..\CustomerSupport.Domain\CustomerSupport.Domain.csproj" />
   </ItemGroup>
 
